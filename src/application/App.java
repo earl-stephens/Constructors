@@ -13,19 +13,24 @@ public class App {
 		/* Person(); in the line below is a method call to the
 		 * Person constructor
 		 */
-		Person person1 = new Person();
+		// Have to provide the name and height to Person()
+		Person person1 = new Person("Mary", 160);
 		
 		//These work, but they are a little verbose
-		person1.setName("Mary");
-		person1.setHeight(160.0);
+		//person1.setName("Mary");
+		//person1.setHeight(160.0);
 		System.out.println(person1.getName());
 		System.out.println(person1.getHeight());
 		
-		Person person2 = new Person();
-		person2.setName("Joe");
-		person2.setHeight(170.5);
+		Person person2 = new Person("Joe", 170.5);
+		//person2.setName("Joe");
+		//person2.setHeight(170.5);
 		System.out.println(person2.getName());
 		System.out.println(person2.getHeight());	
+		
+		Person person3 = new Person();
+		System.out.println(person3.getName());
+		System.out.println(person3.getHeight());
 	}
 
 }
